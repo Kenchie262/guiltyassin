@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="https://file.garden/avfrhhNmL46cQZyA/IMG_7975.png">
+    <link rel="apple-touch-icon" href="https://file.garden/avfrhhNmL46cQZyA/IMG_7975.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilty as Sin</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#170b24">
+    <script src="inspect.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" id="brandSwitcher" href="#/" data-route="/" aria-label="Guilty as Sin home"><span class="brand-name">GUILTY AS SIN</span><img class="brand-mark" src="https://file.garden/avfrhhNmL46cQZyA/IMG_7975.png" alt="" aria-hidden="true"></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a class="nav-link" href="#/" data-route="/" data-nav="home">About</a>
+        <a class="nav-link" href="#/management" data-route="/management" data-nav="management">Management</a>
+        <a class="nav-link" href="#/members" data-route="/members" data-nav="members">Members</a>
+      </div>
+      <span class="divider" aria-hidden="true"></span>
+
+      <button class="icon-btn" type="button" id="musicBtn" aria-label="Play background music" aria-pressed="false" title="Play background music">
+        <svg id="musicIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 18V5l12-2v13"></path>
+          <circle cx="6" cy="18" r="3"></circle>
+          <circle cx="18" cy="16" r="3"></circle>
+          <line x1="2" y1="2" x2="22" y2="22"></line>
+        </svg>
+      </button>
+
+      <button class="icon-btn md-hide" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="nav-link" href="#/" data-route="/" data-nav="home">About</a>
+    <a class="nav-link" href="#/management" data-route="/management" data-nav="management">Management</a>
+    <a class="nav-link" href="#/members" data-route="/members" data-nav="members">Members</a>
+  </div>
+</nav>
+<main id="main-content" tabindex="-1">
+  <section class="view active" id="view-home" aria-label="Home">
+    <div class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <img class="hero-logo fade-up d1" src="https://file.garden/avfrhhNmL46cQZyA/S1N.png" alt="AL-FARSI" width="400" height="200" onerror="this.style.display='none'">
+          <p class="hero-copy fade-up d2">Marked by sin, bound by loyalty, defined by our own rules. We were never made to fit the light. We walk where shadows remain, carrying a name that speaks louder than words. No apologies. No explanations. No need for redemption. We are not here to be forgiven. We are here to be remembered. Every scar tells a story. Every name carries weight. This is more than a symbol. This is our identity. We are Guilty As Sin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="view" id="view-management" aria-label="Management">
+    <div class="members-page">
+      <aside class="identity-panel">
+        <div class="avatar-wrapper">
+          <img class="avatar" id="identityAvatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Management avatar">
+          <img class="avatar-deco" id="identityDeco" alt="" aria-hidden="true">
+          <span class="presence-dot" id="identityDot" data-status="offline"></span>
+        </div>
+        <div>
+          <h1 class="member-name" id="identityName">Management</h1>
+          <p class="member-handle" id="identityHandle"></p>
+        </div>
+        <p class="member-role" id="identityRole"></p>
+        <p class="member-bio" id="identityBio"></p>
+        <div class="activity-chip hidden" id="identityActivity">
+          <img id="identityActivityIcon" alt="" aria-hidden="true">
+          <span class="chip-text" id="identityActivityText"></span>
+        </div>
+      </aside>
+
+      <div class="showcase" id="showcase">
+        <div class="carousel-container"><div class="carousel" id="carousel" role="listbox" aria-label="Member carousel"></div></div>
+        <div class="grid-view" id="gridView"></div>
+      </div>
+
+      <aside class="navigator" aria-label="Member navigation">
+        <div class="view-toggle">
+          <button class="view-btn is-active" id="viewSingle" type="button" aria-label="Carousel view" aria-pressed="true" title="Carousel view">◈</button>
+          <button class="view-btn" id="viewGrid" type="button" aria-label="Grid view" aria-pressed="false" title="Grid view">▦</button>
+        </div>
+        <div class="rail-wrap"><div class="rail" id="rail" role="tablist" aria-label="Choose member"></div></div>
+      </aside>
+    </div>
+  </section>
+  <section class="view" id="view-members" aria-label="Members">
+    <div class="members-directory container">
+      <div class="directory-heading">
+        <h1>EXCLUSIVES</h1>
+      </div>
+      <div class="directory-grid" id="membersDirectory" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
+
+<audio id="bgMusic" preload="none" loop src="https://file.garden/avfrhhNmL46cQZyA/Taylor%20Swift%20-%20Guilty%20as%20Sin%20(Official%20Lyric%20Video)%20-%20Taylor%20Swift.mp3"></audio>
+</body>
+</html>

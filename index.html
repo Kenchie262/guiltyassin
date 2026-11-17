@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Guilty as Sin</title>
+  <link rel="icon" type="image/png" href="https://file.garden/avfrhhNmL46cQZyA/IMG_7975.png">
+  <link rel="apple-touch-icon" href="https://file.garden/avfrhhNmL46cQZyA/IMG_7975.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="inspect.js" defer></script>
+  <style>
+    html, body { width:100%; height:100%; overflow:hidden; background:#000; }
+    .intro { width:100%; height:100vh; min-height:650px; }
+    .logo { filter: grayscale(100%); }
+    .transition { transform: translateY(100%); }
+    .transition.active { transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .transition { transition-duration:.15s; } }
+  </style>
+</head>
+<body>
+  <main class="intro" id="intro">
+    <div class="logo-wrap">
+      <img class="logo" src="https://file.garden/avfrhhNmL46cQZyA/IMG_7975.png" alt="GUILTY AS SIN" aria-hidden="true">
+    </div>
+    <div class="typing-area" aria-live="polite">
+      <span id="typing"></span><span class="cursor" aria-hidden="true"></span>
+    </div>
+  </main>
+  <div class="transition" id="transition" aria-hidden="true"></div>
+  <script>
+    (function () {
+      var phrase = 'GUILTY AS SIN';
+      var output = document.getElementById('typing');
+      var transition = document.getElementById('transition');
+      var i = 0;
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function typeNext() {
+        if (i < phrase.length) {
+          output.textContent += phrase.charAt(i++);
+          window.setTimeout(typeNext, reduceMotion ? 10 : 75);
+          return;
+        }
+        window.setTimeout(function () {
+          transition.classList.add('active');
+          window.setTimeout(function () { window.location.replace('main.html#/'); }, reduceMotion ? 150 : 650);
+        }, reduceMotion ? 150 : 650);
+      }
+      window.addEventListener('load', function () { window.setTimeout(typeNext, reduceMotion ? 0 : 500); });
+    }());
+  </script>
+</body>
+</html>
