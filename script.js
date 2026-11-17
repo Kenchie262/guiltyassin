@@ -5,7 +5,7 @@ const typingElement = document.getElementById("typing");
   'use strict';
 
   var MUSIC_LINKS = {
-    kenchie: '',
+    kenchie: 'https://file.garden/avfrhhNmL46cQZyA/7669282743850781965-Tikdown.net.mp3',
     iyah: '',
     kaeri: '',
     cozy: '',
@@ -13,7 +13,7 @@ const typingElement = document.getElementById("typing");
     ira: '',
     ciya: '',
     pyu: '',
-    luzi: '',
+    luzi: 'https://file.garden/avfrhhNmL46cQZyA/7706619956040846598-Tikdown.net.mp3',
   };
 
   var MANAGEMENT = [
