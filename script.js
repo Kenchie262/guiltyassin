@@ -18,7 +18,7 @@ const typingElement = document.getElementById("typing");
 
   var MANAGEMENT = [
     {name:'Kenchie', role:'FOUNDER', music:MUSIC_LINKS.kenchie, discordId:'444393598621057054', handle:'@K0xz', management: true, banner: 'https://file.garden/avfrhhNmL46cQZyA/k0xz.gif', bio:'They gonna crucify me anyway'},
-    {name:'Iyah', role:'CO-FOUNDER', music:MUSIC_LINKS.iyah, discordId:'1208365640612712498', handle:'@Iyah', management: true, banner: '', bio:''},
+    {name:'Iyah', role:'CO-FOUNDER', music:MUSIC_LINKS.iyah, discordId:'1208365640612712498', handle:'@Iyah', management: true, banner: 'https://file.garden/avfrhhNmL46cQZyA/67.jpeg', bio:'six sevennnnnnnnnnnnn'},
     {name:'Kaeri', role:'HEAD ADMIN', music:MUSIC_LINKS.kaeri, discordId:'1213125111981543524', handle:'@Kaeri', management: true, banner: '', bio:''},
     {name:'Cozy', role:'HEAD ADMIN', music:MUSIC_LINKS.cozy, discordId:'1456894512419967080', handle:'@Cozy', management: true, banner: '', bio:''},
     {name:'Lexi', role:'ADMIN', music:MUSIC_LINKS.lexi, discordId:'1228011743175901316', handle:'@Lexi', management: true, banner: '', bio:''},
